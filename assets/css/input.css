@@ -20,7 +20,10 @@ body {
   font-family: 'Didot', serif;
 }
 
-footer h3,ul,li,p {
+footer h3,
+ul,
+li,
+p {
   font-family: 'Inter', sans-serif;
 }
 
@@ -128,12 +131,12 @@ footer h3,ul,li,p {
 
 .service-card-text {
   color: #000;
-  font-size: 0.75rem;
+  font-size: clamp(0.65rem, 2vw, 0.75rem);
 }
 
 .service-card-text-dark {
   color: #D1D7E6;
-  font-size: 0.75rem;
+  font-size: clamp(0.65rem, 2vw, 0.75rem);
 }
 
 .service-card-image {
