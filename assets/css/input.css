@@ -159,3 +159,7 @@ li a {
   background-position: center;
   background-image: url("../images/timer.jpg");
 }
+
+.invert {
+  filter: invert(1) grayscale(1) contrast(100%);
+}
