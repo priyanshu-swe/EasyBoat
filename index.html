@@ -1,787 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Easy Boat.</title>
 
-    <link
-      rel="shortcut icon"
-      href="assets/images/logo.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Boat.</title>
 
-    <script src="assets/js/script.js" defer></script>
-  </head>
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-  <body class="bg-[#0e222e]">
-    <!-- Navbar -->
-    <header>
-      <nav
-        id="navbar"
-        class="navbar-transition fixed top-0 left-0 w-full z-50 py-4 px-6 sm:px-16"
-      >
-        <div class="flex justify-between items-center">
-          <div class="text-2xl font-bold text-white">
-            <a href="#">
-              <img src="assets/images/logo.png" alt="Logo" class="h-6" />
-            </a>
-          </div>
-          <div class="space-x-6 hidden md:flex items-center">
-            <a href="#" class="text-white hover:text-blue-500">Home</a>
-            <a href="#about" class="text-white hover:text-blue-500">About Us</a>
-            <a href="#contact" class="text-white hover:text-blue-500"
-              >Contact Us</a
-            >
-            <a
-              href="#get-started"
-              class="inline-block px-6 py-2 text-[#fb977d] border-2 border-[#fb977d] rounded-full hover:bg-[#fb977d] hover:text-black transition"
-            >
-              Get Started
-            </a>
-          </div>
-          <!-- Mobile Menu Icon -->
-          <div class="md:hidden">
-            <button id="mobile-menu-toggle" class="text-white text-3xl">
-              &#9776;
-            </button>
-          </div>
+  <script src="assets/js/script.js" defer></script>
+</head>
+
+<body class="bg-[#0e222e]">
+  <!-- Navbar -->
+  <header>
+    <nav id="navbar" class="navbar-transition fixed top-0 left-0 w-full z-50 py-4 px-6 sm:px-16">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold text-white">
+          <a href="#">
+            <img src="assets/images/logo.png" alt="Logo" class="h-6" />
+          </a>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden">
-          <div class="flex flex-col space-y-4 py-4">
-            <a href="#home" class="text-white hover:text-blue-500">Home</a>
-            <a href="#about" class="text-white hover:text-blue-500">About Us</a>
-            <a href="#services" class="text-white hover:text-blue-500"
-              >Contact Us</a
-            >
-            <a
-              href="#get-started"
-              class="inline-block text-center px-6 py-2 text-[#fb977d] border-2 border-[#fb977d] rounded-full hover:bg-[#fb977d] hover:text-black transition"
-            >
-              Get Started
-            </a>
-          </div>
+        <div class="space-x-6 hidden md:flex items-center">
+          <a href="#" class="text-white hover:text-blue-500">Home</a>
+          <a href="#about" class="text-white hover:text-blue-500">About Us</a>
+          <a href="#contact" class="text-white hover:text-blue-500">Contact Us</a>
+          <a href="#get-started"
+            class="inline-block px-6 py-2 text-[#fb977d] border-2 border-[#fb977d] rounded-full hover:bg-[#fb977d] hover:text-black transition">
+            Get Started
+          </a>
         </div>
-      </nav>
-    </header>
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden">
+          <button id="mobile-menu-toggle" class="text-white text-3xl">
+            &#9776;
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="flex flex-col space-y-4 py-4">
+          <a href="#home" class="text-white hover:text-blue-500">Home</a>
+          <a href="#about" class="text-white hover:text-blue-500">About Us</a>
+          <a href="#services" class="text-white hover:text-blue-500">Contact Us</a>
+          <a href="#get-started"
+            class="inline-block text-center px-6 py-2 text-[#fb977d] border-2 border-[#fb977d] rounded-full hover:bg-[#fb977d] hover:text-black transition">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <!-- Banner Section -->
-      <section class="banner relative w-full h-screen">
-        <div class="absolute inset-0 bg-black opacity-10"></div>
-        <div
-          class="absolute inset-0 flex items-center text-left text-white z-10 px-8 sm:px-16"
-        >
-          <div class="max-w-lg flex flex-col gap-4">
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="w-16 h-0.5 bg-blue-500"></div>
-              <h2 class="text-blue-500 text-xl font-semibold uppercase">
-                Boating Simplified
-              </h2>
-            </div>
-            <h2 class="text-5xl sm:text-6xl mb-4 didot font-bold">
-              Boat Ownership With Ease
+  <main>
+    <!-- Banner Section -->
+    <section class="banner relative w-full h-screen">
+      <div class="absolute inset-0 bg-black opacity-10"></div>
+      <div class="absolute inset-0 flex items-center text-left text-white z-10 px-8 sm:px-16">
+        <div class="max-w-lg flex flex-col gap-4">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-0.5 bg-blue-500"></div>
+            <h2 class="text-blue-500 text-xl font-semibold uppercase">
+              Boating Simplified
             </h2>
-            <p class="text-lg mb-6 text-gray">
-              Discover, book, and review boating services all in one place!
-            </p>
-            <h2 class="text-xl sm:text-2xl text-[#fb977d] font-semibold">
-              We will be coming soon on
-            </h2>
-            <div class="flex items-center space-x-4">
-              <img
-                src="assets/images/ios_btn.png"
-                alt="App Store"
-                class="h-8 sm:h-12 cursor-pointer"
-              />
-              <img
-                src="assets/images/play-btn.png"
-                alt="Google Play"
-                class="h-8 sm:h-12 cursor-pointer"
-              />
-            </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Our Services Section -->
-      <section
-        class="relative -mt-40 z-20 bg-transparent text-white py-8 px-8 sm:px-16"
-      >
-        <div class="flex flex-col justify-center items-center mb-4 gap-4">
-          <h1 class="text-xl sm:text-2xl mt-2">Our Services</h1>
-          <img src="assets/images/Mask group.png" alt="Down-Arrow" />
-        </div>
-
-        <div
-          class="bg-[#0C0C0C3B] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8 py-8 px-4 sm:px-8 shadow-lg rounded-3xl backdrop-opacity-50 backdrop-blur-lg"
-        >
-          <!-- Service Cards -->
-          <div class="text-center">
-            <img
-              src="assets/images/icons/maintenance-repairs.svg"
-              alt="Repair & Maintenance"
-              class="h-16 mx-auto mb-4 invert"
-            />
-            <h3 class="text-xl font-semibold">Repair & Maintenance</h3>
-          </div>
-          <div class="text-center">
-            <img
-              src="assets/images/icons/cleaning-detailing.svg"
-              alt="Boat Cleaning & Detailing"
-              class="h-16 mx-auto mb-4 invert"
-            />
-            <h3 class="text-xl font-semibold">Boat Cleaning & Detailing</h3>
-          </div>
-          <div class="text-center">
-            <img
-              src="assets/images/person.png"
-              alt="Marine & Dock Services"
-              class="h-16 mx-auto mb-4"
-            />
-            <h3 class="text-xl font-semibold">Marine & Dock Services</h3>
-          </div>
-          <div class="text-center">
-            <img
-              src="assets/images/icons/transport.svg"
-              alt="Transport & Hauling"
-              class="h-16 mx-auto mb-4 invert"
-            />
-            <h3 class="text-xl font-semibold">Transport & Hauling</h3>
-          </div>
-          <div class="text-center">
-            <img
-              src="assets/images/icons/additional-services.svg"
-              alt="Additional Services"
-              class="h-16 mx-auto mb-4 invert"
-            />
-            <h3 class="text-xl font-semibold">Additional Services</h3>
-          </div>
-          <div class="text-center">
-            <img
-              src="assets/images/icons/diagnosis.svg"
-              alt="Diagnosis"
-              class="h-16 mx-auto mb-4 invert"
-            />
-            <h3 class="text-xl font-semibold">Diagnosis</h3>
-          </div>
-        </div>
-      </section>
-
-      <!-- Services-->
-      <section class="bg-[#0e222e]">
-        <!-- Repairs & Maintenance -->
-        <div class="flex flex-col items-center md:flex-row gap-16">
-          <div class="w-full md:w-1/3">
-            <img src="assets/images/repair.png" class="w-full" alt="Repair" />
-          </div>
-
-          <div class="text-white md:w-55/100 px-8 md:p-2">
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="w-16 h-0.5 bg-blue-500"></div>
-              <h2 class="text-blue-500 text-xl font-semibold uppercase">
-                Comprehensive Care For Your Boat’s Engines, Hull, and Essential
-                Systems
-              </h2>
-            </div>
-            <h2 class="text-2xl sm:text-4xl font-semibold">
-              Repair & Maintenance
-            </h2>
-            <p class="text-lg text-[#D1D7E6] mt-4">
-              At EasyBoat, we connect boaters with a wide range of trusted
-              service providers, ensuring that your vessel is always in peak
-              condition. Whether it’s a quick tune-up or a major repair, our
-              network of trusted providers ensures your vessel gets the
-              attention it needs, so you can sail with confidence
-            </p>
-
-            <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/engine-repairs-services.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Engine Repairs & Servicing</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/hull.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">
-                  Hull & Structural Maintenance/Repair
-                </p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/electrical.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Electrical Systems</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/plumbing.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Plumbing & Sanitation</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/rigging-rails.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Rigging & Sails</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/propulsion.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Propulsion Systems</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/hydraulics.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Hydraulics</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icon.png"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text-dark">AC/Heating Services</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icon.png"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text-dark">Generators</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icon.png"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text-dark">
-                  Upholstery and Canvas Repair
-                </p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icon.png"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text-dark">Authorized Service Center</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Boat Cleaning % Detailing -->
-        <div
-          class="flex flex-col-reverse items-center md:flex-row px-8 md:px-16 py-8 sm:py-16"
-        >
-          <div class="text-white p-2 mt-8 md:mt-0 md:w-1/2 md:mr-8">
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="w-16 h-0.5 bg-blue-500"></div>
-              <h2
-                class="text-blue-500 text-base sm:text-xl font-semibold uppercase"
-              >
-                Clean, Polished, and Ready To Go!
-              </h2>
-            </div>
-            <h2 class="text-xl sm:text-2xl lg:text-4xl font-semibold">
-              Boat Cleaning & Detailing
-            </h2>
-            <p class="text-sm sm:text-lg text-gray-300 mt-4 leading-relaxed">
-              A well-maintained boat doesn’t just look great—it performs better
-              and lasts longer. EasyBoat connects you with professionals who
-              specialize in keeping your vessel spotless, polished, and
-              protected. From regular washes to meticulous detailing and
-              restoration, we make it simple to maintain your boat’s appearance
-              and value.
-            </p>
-
-            <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/washing.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Washing</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/detailing-polishing.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Detailing/Polishing</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/teak-wood.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Teak and Wood Restoration</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/bottom-cleaning.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Bottom Cleaning</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="md:w-1/2">
-            <img
-              src="assets/images/slide-1.png"
-              class="w-full rounded-lg"
-              alt="Add-Ons"
-            />
-          </div>
-        </div>
-
-        <!-- Marine & Dock -->
-        <div class="bg-white flex flex-col md:flex-row items-stretch gap-16">
-          <div class="w-full md:w-1/3 shrink-0">
-            <img
-              src="assets/images/dock.png"
-              class="w-full h-full object-cover"
-              alt="Dock"
-            />
-          </div>
-
-          <div
-            class="text-white md:w-55/100 px-8 md:mr-8 flex items-start flex-col justify-center grow"
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="w-16 h-0.5 bg-blue-500"></div>
-              <h2 class="text-blue-500 text-xl font-semibold uppercase">
-                From Refueling and Waste Pump-Out, To Secure Storage and
-                Winterization
-              </h2>
-            </div>
-            <h2 class="text-2xl sm:text-5xl font-bold text-black">
-              Marine & Dock Services
-            </h2>
-            <p class="text-lg text-black mt-4">
-              EasyBoat offers essential marina and dockside services designed to
-              make boating more convenient and hassle-free. Whether you need
-              fuel, a pump-out service, secure storage, or winterization, we’ve
-              got you covered with reliable, efficient solutions
-            </p>
-            <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
-              <div class="service-card service-card-light">
-                <img
-                  src="assets/images/icons/fuel-services.svg"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text">Fuel Services</p>
-              </div>
-              <div class="service-card service-card-light">
-                <img
-                  src="assets/images/icons/detailing-polishing.svg"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text">Fuel Polishing</p>
-              </div>
-              <div class="service-card service-card-light">
-                <img
-                  src="assets/images/icons/pump-out-services.svg"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text">Pump-Out Services</p>
-              </div>
-              <div class="service-card service-card-light">
-                <img
-                  src="assets/images/icon-dark.png"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text">Storage</p>
-              </div>
-              <div class="service-card service-card-light">
-                <img
-                  src="assets/images/icons/winterzation.svg"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text">Winterization</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Transport & Hauling -->
-        <div
-          class="flex flex-col-reverse md:flex-row items-center px-8 md:px-16 py-8 sm:py-16"
-        >
-          <div class="text-white mt-8 md:mt-0 md:w-1/2 p-2 md:mr-8">
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="w-16 h-0.5 bg-blue-500"></div>
-              <h2
-                class="text-blue-500 text-base sm:text-xl font-semibold uppercase"
-              >
-                Land Transportation & On The Water Boat Deliveries
-              </h2>
-            </div>
-            <h2 class="text-xl sm:text-2xl lg:text-4xl font-semibold">
-              Transport & Hauling
-            </h2>
-            <p class="text-sm sm:text-lg text-gray-300 mt-4 leading-relaxed">
-              ​​Moving your boat has never been easier with EasyBoat’s transport
-              and hauling services. Whether you need to deliver your boat for
-              repairs, store it for the season, or install moorings or docks,
-              our professional team ensures safe and efficient handling every
-              step of the way. Let us take care of the logistics so you can
-              enjoy your time on the water
-            </p>
-
-            <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/transport.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">
-                  Boat Transportation / Delivery
-                </p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/baut-hauling.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Boat Hauling</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icon.png"
-                  alt="Icon"
-                  class="service-card-image"
-                />
-                <p class="service-card-text-dark">
-                  Mooring/Dock Installation and Removal
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="md:w-1/2">
-            <img
-              src="assets/images/slide-1.png"
-              class="w-full rounded-lg"
-              alt="Add-Ons"
-            />
-          </div>
-        </div>
-
-        <!-- Additional Services -->
-        <div
-          class="flex flex-col md:flex-row items-center px-8 md:px-16 py-8 sm:py-16"
-        >
-          <div class="md:w-1/2">
-            <img
-              src="assets/images/slide-1.png"
-              class="w-full rounded-lg"
-              alt="Add-Ons"
-            />
-          </div>
-
-          <div class="md:w-1/2 text-white mt-8 md:mt-0 p-2 md:ml-8">
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="w-16 h-0.5 bg-blue-500"></div>
-              <h2
-                class="text-blue-500 text-base sm:text-xl font-semibold uppercase"
-              >
-                Custom Yacht Graphics & Cosmetic Wrapping
-              </h2>
-            </div>
-            <h2 class="text-xl sm:text-2xl lg:text-4xl font-semibold">
-              Additional Services
-            </h2>
-            <p class="text-sm sm:text-lg text-gray-300 mt-4 leading-relaxed">
-              At EasyBoat, we offer a range of additional services to customize
-              and enhance your boating experience. Whether you’re looking to
-              personalize your yacht with custom graphics or give it a fresh new
-              look with cosmetic wrapping, our skilled professionals can bring
-              your vision to life
-            </p>
-
-            <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/yacht-graphics.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Yacht Graphics</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/cosmetic-wrapping.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Cosmetic Wrapping</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Diagnosis -->
-        <div
-          class="flex flex-col-reverse items-center md:flex-row px-8 md:px-16 py-8 sm:py-16"
-        >
-          <div class="md:w-1/2 text-white mt-8 md:mt-0 p-2 md:mr-8">
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="w-16 h-0.5 bg-blue-500"></div>
-              <h2
-                class="text-blue-500 text-base sm:text-xl font-semibold uppercase"
-              >
-                Bold Approach
-              </h2>
-            </div>
-            <h2 class="text-xl sm:text-2xl lg:text-4xl font-semibold">
-              Diagnosis
-            </h2>
-            <p class="text-sm sm:text-lg text-gray-300 mt-4 leading-relaxed">
-              When something’s not right with your boat, EasyBoat offers expert
-              diagnostic services to get to the bottom of the issue quickly.
-              Whether it’s a virtual consultation or an in-person visit, our
-              experienced technicians provide accurate assessments to help you
-              make informed decisions about your boat’s care
-            </p>
-
-            <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/virtual-dignosis.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">Virtual Video Call - $100</p>
-              </div>
-              <div class="service-card">
-                <img
-                  src="assets/images/icons/in-person-diagnosis.svg"
-                  alt="Icon"
-                  class="service-card-image invert"
-                />
-                <p class="service-card-text-dark">In-Person Diagnosis - $200</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="md:w-1/2">
-            <img
-              src="assets/images/diagnosis.png"
-              class="w-full rounded-lg"
-              alt="Diagnosis"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section id="about" class="about-bg relative w-full min-h-screen">
-        <div
-          class="absolute inset-0 flex flex-col justify-center text-left px-8 md:px-16"
-        >
-          <h2
-            class="text-4xl md:text-6xl mb-4 text-white font-semibold text-center"
-          >
-            About Us
+          <h2 class="text-5xl sm:text-6xl mb-4 didot font-bold">
+            Boat Ownership With Ease
           </h2>
-          <p class="text-sm md:text-xl mb-4 text-white leading-relaxed">
-            At EasyBoat, we believe boating should be about enjoying the water,
-            not dealing with the headaches of maintenance and logistics. That’s
-            why we’ve created a platform to connect boat owners with trusted,
-            skilled service providers in the Long Island Sound area.
+          <p class="text-lg mb-6 text-gray">
+            Discover, book, and review boating services all in one place!
           </p>
-          <p class="text-sm md:text-xl mb-4 text-white leading-relaxed">
-            We noticed a gap—finding reliable professionals for boat maintenance
-            and repairs can be frustrating, expensive, and time-consuming.
-            EasyBoat was built to solve this problem, offering a convenient,
-            all-in-one solution for accessing the services you need when you
-            need them.
-          </p>
-
-          <p class="text-sm md:text-xl mb-4 text-white leading-relaxed">
-            Our vision is to foster a thriving community of boaters and service
-            providers built on trust, convenience, and a shared love of the
-            boating lifestyle.
-          </p>
-
-          <p class="text-sm md:text-xl mb-4 text-white leading-relaxed">
-            Thank you for trusting EasyBoat to simplify your boating experience.
-          </p>
-        </div>
-      </section>
-
-      <!-- Timer -->
-      <section
-        class="timer-bg relative w-full h-[50vh] flex flex-col justify-center items-center text-center px-8 md:px-16"
-      >
-        <div>
-          <h2 class="text-4xl md:text-6xl mb-4 font-bold">It's almost here!</h2>
-          <h4 class="text-2xl md:text-4xl mb-8 font-semibold">
-            Launching in April 2025!
-          </h4>
-          <div id="countdown" class="flex gap-4">
-            <!-- Days -->
-            <div class="flex flex-col items-center">
-              <div
-                class="bg-gray-800 text-white text-3xl md:text-6xl font-bold px-4 py-2 rounded"
-              >
-                <span id="days">00</span>
-              </div>
-              <span class="text-lg md:text-xl mt-2">Days</span>
-            </div>
-            <!-- Hours -->
-            <div class="flex flex-col items-center">
-              <div
-                class="bg-gray-800 text-white text-3xl md:text-6xl font-bold px-4 py-2 rounded"
-              >
-                <span id="hours">00</span>
-              </div>
-              <span class="text-lg md:text-xl mt-2">Hours</span>
-            </div>
-            <!-- Minutes -->
-            <div class="flex flex-col items-center">
-              <div
-                class="bg-gray-800 text-white text-3xl md:text-6xl font-bold px-4 py-2 rounded"
-              >
-                <span id="minutes">00</span>
-              </div>
-              <span class="text-lg md:text-xl mt-2">Minutes</span>
-            </div>
-            <!-- Seconds -->
-            <div class="flex flex-col items-center">
-              <div
-                class="bg-gray-800 text-white text-3xl md:text-6xl font-bold px-4 py-2 rounded"
-              >
-                <span id="seconds">00</span>
-              </div>
-              <span class="text-lg md:text-xl mt-2">Seconds</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-[#0e222c] text-white py-12 px-8 md:px-16">
-      <div>
-        <div class="flex flex-wrap justify-between">
-          <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
-            <h3 class="font-bold text-lg mb-4">Service Categories</h3>
-            <ul class="space-y-2 text-gray">
-              <li>Repair & Maintenance</li>
-              <li>Boat Cleaning & Detailing</li>
-              <li>Marine & Dock Services</li>
-              <li>Transport & Hauling</li>
-              <li>Additional Services</li>
-              <li>Diagnosis</li>
-            </ul>
-          </div>
-
-          <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
-            <h3 class="font-bold text-lg mb-4">Help</h3>
-            <ul class="space-y-2 text-gray">
-              <li><a href="#about">About us</a></li>
-              <li><a href="#contact">Contact us</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-
-          <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
-            <h3 class="font-bold text-lg mb-4">Services</h3>
-            <ul class="space-y-2 text-gray">
-              <li>Boat Hauling</li>
-              <li>Storage</li>
-              <li>Washing</li>
-              <li>Fuel Services</li>
-            </ul>
-          </div>
-
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mb-8">
-            <h3 class="font-bold text-lg mb-4">Subscribe</h3>
-            <form class="flex mb-4">
-              <input
-                type="email"
-                class="w-full flex-grow bg-white text-gray-800 border border-gray-500 placeholder-gray-400 py-2 px-4 rounded-l focus:outline-none"
-              />
-              <button
-                type="submit"
-                class="bg-blue-500 hover:bg-blue-600 text-white px-4 rounded-r"
-              >
-                >
-              </button>
-            </form>
-            <p class="text-sm">Sign up to be the first on the platform!</p>
-          </div>
-        </div>
-
-        <div class="border-t border-gray-600 my-8"></div>
-
-        <div class="flex flex-wrap justify-between items-center gap-4">
-          <div>
-            <img src="assets/images/logo.png" alt="Logo" class="h-8" />
-          </div>
-          <div class="flex space-x-4">
-            <a href="#" class="hover:text-blue-500">
-              <img
-                src="assets/images/linkedin.png"
-                alt="LinkedIn"
-                class="w-6 h-6"
-              />
-            </a>
-            <a href="#" class="hover:text-blue-500">
-              <img
-                src="assets/images/facebook.png"
-                alt="Facebook"
-                class="w-6 h-6"
-              />
-            </a>
-            <a href="#" class="hover:text-blue-500">
-              <img
-                src="assets/images/insta.png"
-                alt="Instagram"
-                class="w-6 h-6"
-              />
-            </a>
+          <h2 class="text-xl sm:text-2xl text-[#fb977d] font-semibold">
+            We will be coming soon on
+          </h2>
+          <div class="flex items-center space-x-4">
+            <img src="assets/images/ios_btn.png" alt="App Store" class="h-8 sm:h-12 cursor-pointer" />
+            <img src="assets/images/play-btn.png" alt="Google Play" class="h-8 sm:h-12 cursor-pointer" />
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="relative -mt-40 z-20 bg-transparent text-white py-8 px-8 sm:px-16">
+      <div class="flex flex-col justify-center items-center mb-4 gap-4">
+        <h1 class="text-xl sm:text-2xl mt-2">Our Services</h1>
+        <img src="assets/images/Mask group.png" alt="Down-Arrow" />
+      </div>
+
+      <div
+        class="bg-[#0C0C0C3B] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8 py-8 px-4 sm:px-8 shadow-lg rounded-3xl backdrop-opacity-50 backdrop-blur-lg">
+        <!-- Service Cards -->
+        <div class="text-center">
+          <img src="assets/images/icons/maintenance-repairs.svg" alt="Repair & Maintenance"
+            class="h-16 mx-auto mb-4 invert" />
+          <h3 class="text-xl font-semibold">Repair & Maintenance</h3>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/icons/cleaning-detailing.svg" alt="Boat Cleaning & Detailing"
+            class="h-16 mx-auto mb-4 invert" />
+          <h3 class="text-xl font-semibold">Boat Cleaning & Detailing</h3>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/icons/Marine-Dock-Services.svg" alt="Marine & Dock Services"
+            class="h-16 mx-auto mb-4 invert" />
+          <h3 class="text-xl font-semibold">Marine & Dock Services</h3>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/icons/transport.svg" alt="Transport & Hauling" class="h-16 mx-auto mb-4 invert" />
+          <h3 class="text-xl font-semibold">Transport & Hauling</h3>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/icons/additional-services.svg" alt="Additional Services"
+            class="h-16 mx-auto mb-4 invert" />
+          <h3 class="text-xl font-semibold">Additional Services</h3>
+        </div>
+        <div class="text-center">
+          <img src="assets/images/icons/diagnosis.svg" alt="Diagnosis" class="h-16 mx-auto mb-4 invert" />
+          <h3 class="text-xl font-semibold">Diagnosis</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services-->
+    <section class="bg-[#0e222e]">
+      <!-- Repairs & Maintenance -->
+      <div class="flex flex-col items-center md:flex-row gap-16">
+        <div class="w-full md:w-1/3">
+          <img src="assets/images/repair.png" class="w-full" alt="Repair" />
+        </div>
+
+        <div class="text-white md:w-55/100 px-8 md:p-2">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-0.5 bg-blue-500"></div>
+            <h2 class="text-blue-500 text-xl font-semibold uppercase">
+              Comprehensive Care For Your Boat’s Engines, Hull, and Essential
+              Systems
+            </h2>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-semibold">
+            Repair & Maintenance
+          </h2>
+          <p class="text-lg text-[#D1D7E6] mt-4">
+            At EasyBoat, we connect boaters with a wide range of trusted
+            service providers, ensuring that your vessel is always in peak
+            condition. Whether it’s a quick tune-up or a major repair, our
+            network of trusted providers ensures your vessel gets the
+            attention it needs, so you can sail with confidence
+          </p>
+
+          <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
+            <div class="service-card">
+              <img src="assets/images/icons/engine-repairs-services.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Engine Repairs & Servicing</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/hull.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">
+                Hull & Structural Maintenance/Repair
+              </p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/electrical.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Electrical Systems</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/plumbing.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Plumbing & Sanitation</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/rigging-rails.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Rigging & Sails</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/propulsion.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Propulsion Systems</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/hydraulics.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Hydraulics</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/ACHeating-Services.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">AC/Heating Services</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/Generators.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Generators</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/Upholstery-and-Canvas-Repair.svg" alt="Icon"
+                class="service-card-image invert" />
+              <p class="service-card-text-dark">
+                Upholstery and Canvas Repair
+              </p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/Authorized-Service.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Authorized Service Center</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boat Cleaning % Detailing -->
+      <div class="flex flex-col-reverse items-center md:flex-row px-8 md:px-16 py-8 sm:py-16">
+        <div class="text-white p-2 mt-8 md:mt-0 md:w-1/2 md:mr-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-0.5 bg-blue-500"></div>
+            <h2 class="text-blue-500 text-base sm:text-xl font-semibold uppercase">
+              Clean, Polished, and Ready To Go!
+            </h2>
+          </div>
+          <h2 class="text-xl sm:text-2xl lg:text-4xl font-semibold">
+            Boat Cleaning & Detailing
+          </h2>
+          <p class="text-sm sm:text-lg text-gray-300 mt-4 leading-relaxed">
+            A well-maintained boat doesn’t just look great—it performs better
+            and lasts longer. EasyBoat connects you with professionals who
+            specialize in keeping your vessel spotless, polished, and
+            protected. From regular washes to meticulous detailing and
+            restoration, we make it simple to maintain your boat’s appearance
+            and value.
+          </p>
+
+          <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
+            <div class="service-card">
+              <img src="assets/images/icons/washing.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Washing</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/detailing-polishing.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Detailing/
+                Polishing</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/teak-wood.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Teak and Wood Restoration</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/bottom-cleaning.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Bottom Cleaning</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2">
+          <img src="assets/images/slide-1.png" class="w-full rounded-lg" alt="Add-Ons" />
+        </div>
+      </div>
+
+      <!-- Marine & Dock -->
+      <div class="bg-white flex flex-col md:flex-row items-stretch gap-16">
+        <div class="w-full md:w-1/3 shrink-0">
+          <img src="assets/images/dock.png" class="w-full h-full object-cover" alt="Dock" />
+        </div>
+
+        <div class="text-white md:w-55/100 px-8 md:mr-8 flex items-start flex-col justify-center grow">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-0.5 bg-blue-500"></div>
+            <h2 class="text-blue-500 text-xl font-semibold uppercase">
+              From Refueling and Waste Pump-Out, To Secure Storage and
+              Winterization
+            </h2>
+          </div>
+          <h2 class="text-2xl sm:text-5xl font-bold text-black">
+            Marine & Dock Services
+          </h2>
+          <p class="text-lg text-black mt-4">
+            EasyBoat offers essential marina and dockside services designed to
+            make boating more convenient and hassle-free. Whether you need
+            fuel, a pump-out service, secure storage, or winterization, we’ve
+            got you covered with reliable, efficient solutions
+          </p>
+          <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
+            <div class="service-card service-card-light">
+              <img src="assets/images/icons/fuel-services.svg" alt="Icon" class="service-card-image" />
+              <p class="service-card-text">Fuel Services</p>
+            </div>
+            <div class="service-card service-card-light">
+              <img src="assets/images/icons/detailing-polishing.svg" alt="Icon" class="service-card-image" />
+              <p class="service-card-text">Fuel Polishing</p>
+            </div>
+            <div class="service-card service-card-light">
+              <img src="assets/images/icons/pump-out-services.svg" alt="Icon" class="service-card-image" />
+              <p class="service-card-text">Pump-Out Services</p>
+            </div>
+            <div class="service-card service-card-light">
+              <img src="assets/images/icons/Storage.svg" alt="Icon" class="service-card-image" />
+              <p class="service-card-text">Storage</p>
+            </div>
+            <div class="service-card service-card-light">
+              <img src="assets/images/icons/winterzation.svg" alt="Icon" class="service-card-image" />
+              <p class="service-card-text">Winterization</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transport & Hauling -->
+      <div class="flex flex-col-reverse md:flex-row items-center px-8 md:px-16 py-8 sm:py-16">
+        <div class="text-white mt-8 md:mt-0 md:w-1/2 p-2 md:mr-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-0.5 bg-blue-500"></div>
+            <h2 class="text-blue-500 text-base sm:text-xl font-semibold uppercase">
+              Land Transportation & On The Water Boat Deliveries
+            </h2>
+          </div>
+          <h2 class="text-xl sm:text-2xl lg:text-4xl font-semibold">
+            Transport & Hauling
+          </h2>
+          <p class="text-sm sm:text-lg text-gray-300 mt-4 leading-relaxed">
+            ​​Moving your boat has never been easier with EasyBoat’s transport
+            and hauling services. Whether you need to deliver your boat for
+            repairs, store it for the season, or install moorings or docks,
+            our professional team ensures safe and efficient handling every
+            step of the way. Let us take care of the logistics so you can
+            enjoy your time on the water
+          </p>
+
+          <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
+            <div class="service-card">
+              <img src="assets/images/icons/transport.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">
+                Boat Transportation / Delivery
+              </p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/baut-hauling.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Boat Hauling</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/mooring.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">
+                Mooring/Dock Installation and Removal
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2">
+          <img src="assets/images/slide-1.png" class="w-full rounded-lg" alt="Add-Ons" />
+        </div>
+      </div>
+
+      <!-- Additional Services -->
+      <div class="flex flex-col md:flex-row items-center px-8 md:px-16 py-8 sm:py-16">
+        <div class="md:w-1/2">
+          <img src="assets/images/slide-1.png" class="w-full rounded-lg" alt="Add-Ons" />
+        </div>
+
+        <div class="md:w-1/2 text-white mt-8 md:mt-0 p-2 md:ml-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-0.5 bg-blue-500"></div>
+            <h2 class="text-blue-500 text-base sm:text-xl font-semibold uppercase">
+              Custom Yacht Graphics & Cosmetic Wrapping
+            </h2>
+          </div>
+          <h2 class="text-xl sm:text-2xl lg:text-4xl font-semibold">
+            Additional Services
+          </h2>
+          <p class="text-sm sm:text-lg text-gray-300 mt-4 leading-relaxed">
+            At EasyBoat, we offer a range of additional services to customize
+            and enhance your boating experience. Whether you’re looking to
+            personalize your yacht with custom graphics or give it a fresh new
+            look with cosmetic wrapping, our skilled professionals can bring
+            your vision to life
+          </p>
+
+          <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
+            <div class="service-card">
+              <img src="assets/images/icons/yacht-graphics.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Yacht Graphics</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/cosmetic-wrapping.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Cosmetic Wrapping</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diagnosis -->
+      <div class="flex flex-col-reverse items-center md:flex-row px-8 md:px-16 py-8 sm:py-16">
+        <div class="md:w-1/2 text-white mt-8 md:mt-0 p-2 md:mr-8">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-0.5 bg-blue-500"></div>
+            <h2 class="text-blue-500 text-base sm:text-xl font-semibold uppercase">
+              Bold Approach
+            </h2>
+          </div>
+          <h2 class="text-xl sm:text-2xl lg:text-4xl font-semibold">
+            Diagnosis
+          </h2>
+          <p class="text-sm sm:text-lg text-gray-300 mt-4 leading-relaxed">
+            When something’s not right with your boat, EasyBoat offers expert
+            diagnostic services to get to the bottom of the issue quickly.
+            Whether it’s a virtual consultation or an in-person visit, our
+            experienced technicians provide accurate assessments to help you
+            make informed decisions about your boat’s care
+          </p>
+
+          <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 py-8">
+            <div class="service-card">
+              <img src="assets/images/icons/virtual-dignosis.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">Virtual Video Call - $100</p>
+            </div>
+            <div class="service-card">
+              <img src="assets/images/icons/in-person-diagnosis.svg" alt="Icon" class="service-card-image invert" />
+              <p class="service-card-text-dark">In-Person Diagnosis - $200</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2">
+          <img src="assets/images/diagnosis.png" class="w-full rounded-lg" alt="Diagnosis" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-bg relative w-full min-h-screen">
+      <div class="absolute inset-0 flex flex-col justify-center text-left px-8 md:px-16">
+        <h2 class="text-4xl md:text-6xl mb-4 text-white font-semibold text-center">
+          About Us
+        </h2>
+        <p class="text-sm md:text-xl mb-4 text-white leading-relaxed">
+          At EasyBoat, we believe boating should be about enjoying the water,
+          not dealing with the headaches of maintenance and logistics. That’s
+          why we’ve created a platform to connect boat owners with trusted,
+          skilled service providers in the Long Island Sound area.
+        </p>
+        <p class="text-sm md:text-xl mb-4 text-white leading-relaxed">
+          We noticed a gap—finding reliable professionals for boat maintenance
+          and repairs can be frustrating, expensive, and time-consuming.
+          EasyBoat was built to solve this problem, offering a convenient,
+          all-in-one solution for accessing the services you need when you
+          need them.
+        </p>
+
+        <p class="text-sm md:text-xl mb-4 text-white leading-relaxed">
+          Our vision is to foster a thriving community of boaters and service
+          providers built on trust, convenience, and a shared love of the
+          boating lifestyle.
+        </p>
+
+        <p class="text-sm md:text-xl mb-4 text-white leading-relaxed">
+          Thank you for trusting EasyBoat to simplify your boating experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Timer -->
+    <section
+      class="timer-bg relative w-full h-[50vh] flex flex-col justify-center items-center text-center px-8 md:px-16">
+      <div>
+        <h2 class="text-4xl md:text-6xl mb-4 font-bold">It's almost here!</h2>
+        <h4 class="text-2xl md:text-4xl mb-8 font-semibold">
+          Launching in April 2025!
+        </h4>
+        <div id="countdown" class="flex gap-4">
+          <!-- Days -->
+          <div class="flex flex-col items-center">
+            <div class="bg-gray-800 text-white text-3xl md:text-6xl font-bold px-4 py-2 rounded">
+              <span id="days">00</span>
+            </div>
+            <span class="text-lg md:text-xl mt-2">Days</span>
+          </div>
+          <!-- Hours -->
+          <div class="flex flex-col items-center">
+            <div class="bg-gray-800 text-white text-3xl md:text-6xl font-bold px-4 py-2 rounded">
+              <span id="hours">00</span>
+            </div>
+            <span class="text-lg md:text-xl mt-2">Hours</span>
+          </div>
+          <!-- Minutes -->
+          <div class="flex flex-col items-center">
+            <div class="bg-gray-800 text-white text-3xl md:text-6xl font-bold px-4 py-2 rounded">
+              <span id="minutes">00</span>
+            </div>
+            <span class="text-lg md:text-xl mt-2">Minutes</span>
+          </div>
+          <!-- Seconds -->
+          <div class="flex flex-col items-center">
+            <div class="bg-gray-800 text-white text-3xl md:text-6xl font-bold px-4 py-2 rounded">
+              <span id="seconds">00</span>
+            </div>
+            <span class="text-lg md:text-xl mt-2">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-[#0e222c] text-white py-12 px-8 md:px-16">
+    <div>
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
+          <h3 class="font-bold text-lg mb-4">Service Categories</h3>
+          <ul class="space-y-2 text-gray">
+            <li>Repair & Maintenance</li>
+            <li>Boat Cleaning & Detailing</li>
+            <li>Marine & Dock Services</li>
+            <li>Transport & Hauling</li>
+            <li>Additional Services</li>
+            <li>Diagnosis</li>
+          </ul>
+        </div>
+
+        <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
+          <h3 class="font-bold text-lg mb-4">Help</h3>
+          <ul class="space-y-2 text-gray">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
+          <h3 class="font-bold text-lg mb-4">Services</h3>
+          <ul class="space-y-2 text-gray">
+            <li>Boat Hauling</li>
+            <li>Storage</li>
+            <li>Washing</li>
+            <li>Fuel Services</li>
+          </ul>
+        </div>
+
+        <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mb-8">
+          <h3 class="font-bold text-lg mb-4">Subscribe</h3>
+          <form class="flex mb-4">
+            <input type="email"
+              class="w-full flex-grow bg-white text-gray-800 border border-gray-500 placeholder-gray-400 py-2 px-4 rounded-l focus:outline-none" />
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 rounded-r">
+              >
+            </button>
+          </form>
+          <p class="text-sm">Sign up to be the first on the platform!</p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-600 my-8"></div>
+
+      <div class="flex flex-wrap justify-between items-center gap-4">
+        <div>
+          <img src="assets/images/logo.png" alt="Logo" class="h-8" />
+        </div>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-blue-500">
+            <img src="assets/images/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+          </a>
+          <a href="#" class="hover:text-blue-500">
+            <img src="assets/images/facebook.png" alt="Facebook" class="w-6 h-6" />
+          </a>
+          <a href="#" class="hover:text-blue-500">
+            <img src="assets/images/insta.png" alt="Instagram" class="w-6 h-6" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
