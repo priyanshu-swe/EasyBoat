@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch"
+    "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+    "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.0",
+    "@tailwindcss/cli": "^4.0.6",
     "tailwindcss": "^4.0.0"
   }
 }
