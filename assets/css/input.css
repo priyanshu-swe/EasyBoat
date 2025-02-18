@@ -57,8 +57,8 @@ li a {
 /* Banner */
 .banner {
   background: #0e222c;
-  background-image: linear-gradient(to right, #0e222c 600px, rgba(0, 0, 0, 0)),
-    url("../images/banner.jpg");
+  background-image: linear-gradient(to right, #0e222c57 600px, rgba(0, 0, 0, 0)),
+    url("../images/Hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
