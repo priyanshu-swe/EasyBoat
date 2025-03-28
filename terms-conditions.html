@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Boat.</title>
+
+    <!-- Standard Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+
+    <!-- Apple Touch Icon (For iOS Home Screen) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+
+    <!-- Android Chrome Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicons/android-chrome-512x512.png"
+    />
+
+    <!-- Favicon for Legacy Browsers -->
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body class="bg-[#0e222e]">
+    <!-- Navbar -->
+    <header>
+      <nav
+        id="navbar"
+        class="navbar-transition fixed top-0 left-0 w-full z-50 py-4 px-6 sm:px-16"
+      >
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold text-white">
+            <a href="index.html">
+              <img src="assets/images/logo.png" alt="Logo" class="h-6" />
+            </a>
+          </div>
+          <div class="space-x-6 hidden md:flex items-center">
+            <a href="index.html" class="text-white hover:text-blue-500">Home</a>
+            <a href="index.html#about" class="text-white hover:text-blue-500">About Us</a>
+            <a href="#contact" class="text-white hover:text-blue-500"
+              >Contact Us</a
+            >
+            <a
+              href="#get-started"
+              class="inline-block px-6 py-2 text-[#fb977d] border-2 border-[#fb977d] rounded-full hover:bg-[#fb977d] hover:text-black transition"
+            >
+              Get Started
+            </a>
+          </div>
+          <!-- Mobile Menu Icon -->
+          <div class="md:hidden">
+            <button id="mobile-menu-toggle" class="text-white text-3xl">
+              &#9776;
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+          <div class="flex flex-col space-y-4 py-4">
+            <a href="index.html" class="text-white hover:text-blue-500">Home</a>
+            <a href="index.html#about" class="text-white hover:text-blue-500">About Us</a>
+            <a href="#contact" class="text-white hover:text-blue-500"
+              >Contact Us</a
+            >
+            <a
+              href="#get-started"
+              class="inline-block text-center px-6 py-2 text-[#fb977d] border-2 border-[#fb977d] rounded-full hover:bg-[#fb977d] hover:text-black transition"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner relative w-full h-screen">
+        <div
+          class="absolute inset-0 flex items-center text-left text-white z-10 px-8 sm:px-16"
+        >
+          <div class="max-w-lg flex flex-col gap-4">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="w-16 h-0.5 bg-blue-500"></div>
+              <h2 class="text-blue-500 text-xl font-semibold uppercase">
+                Terms & Conditions
+              </h2>
+            </div>
+            <h2 class="text-5xl sm:text-6xl mb-4 didot font-bold">
+              Understanding Our Terms of Use
+            </h2>
+            <p class="text-lg mb-6 text-gray">
+              By accessing and using our services, you agree to comply with our
+              Terms & Conditions. Please review them carefully to understand
+              your rights and responsibilities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="terms-conditions"
+        class="bg-[#0e222e] text-white py-16 px-8 sm:px-16"
+      >
+        <div class="    ">
+          <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-center">
+            Terms & Conditions
+          </h2>
+
+          <div class="space-y-8">
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Agreement Between User and EasyBoat
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat, accessible via www.easyboat.app and the EasyBoat
+                mobile application (collectively, the "Platform"), is operated
+                by EasyBoat LLC. ("EasyBoat"). The Platform is offered to you
+                conditioned upon your acceptance of these terms, conditions, and
+                notices (the "Terms"). Your use of the Platform constitutes your
+                agreement to all such Terms. Please read these Terms carefully
+                and retain a copy for your records.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Platform Description
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat is an e-commerce marketplace for marine services,
+                allowing boat owners to connect with curated marine service
+                providers. EasyBoat facilitates transactions between boat owners
+                and service providers, charging a service fee per transaction
+                through the platform's website and mobile application. There are
+                no subscription/membership fees, EasyBoat is structured as a
+                transaction based model so you only pay for the services that
+                are requested.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Privacy Policy
+              </h3>
+              <p class="text-gray-300">
+                Your use of the platform is subject to EasyBoat’s Privacy
+                Policy. Please review our Privacy Policy to understand our data
+                collection, usage, and protection practices.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Electronic Communications
+              </h3>
+              <p class="text-gray-300">
+                By accessing or using the platform, or by communicating with
+                EasyBoat via email or other electronic means, you hereby consent
+                to receive electronic communications from EasyBoat. You
+                acknowledge and agree that all agreements, notices, disclosures,
+                and other communications that we provide to you electronically
+                shall satisfy any and all legal requirements that such
+                communications be in writing.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Your Account
+              </h3>
+              <p class="text-gray-300">
+                If you create an account on EasyBoat, you are responsible for
+                maintaining the confidentiality of your account credentials. You
+                may not transfer your account to another person. EasyBoat
+                reserves the right to refuse service, terminate accounts, or
+                modify content at its sole discretion.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Service Transactions and Payments
+              </h3>
+
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>
+                  Users submit service requests, and providers respond with
+                  quotes.
+                </li>
+                <li>
+                  The selected provider’s fee is held one day before the
+                  service.
+                </li>
+                <li>
+                  Service providers must verify the boat's location with the
+                  boat owner before starting the service.
+                </li>
+                <li>
+                  The provider must verify service completion via an OTP
+                  verification process.
+                </li>
+                <li>
+                  The user has 24 hours to confirm the service completion before
+                  funds are released.
+                </li>
+                <li>
+                  EasyBoat collects a 10 % transaction fee per completed
+                  service.
+                </li>
+                <li>
+                  Stripe processes payments, deducting a 3% fee from the
+                  provider’s earnings.
+                </li>
+                <li>Sales tax is applied as required by law.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Cancellation and Refund Policy
+              </h3>
+
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>
+                  Users may cancel a service request within 10 minutes of pacing
+                  the order for no penalty.
+                </li>
+                <li>
+                  If the user cancels after 10 minutes of placing the order, but
+                  before one week of the scheduled service, they qualify for a
+                  80% refund.
+                  <ul class="list-[square] pl-8 space-y-1">
+                    <li>10% to the service provider.</li>
+                    <li>10% to EasyBoat.</li>
+                  </ul>
+                </li>
+                <li>
+                  If the user cancels within one week of the scheduled service,
+                  but prior to 48 hours before the service, they qualify for a
+                  50 % refund.
+                  <ul class="list-[square] pl-8 space-y-1">
+                    <li>30% to the service provider.</li>
+                    <li>20% to EasyBoat.</li>
+                  </ul>
+                </li>
+                <li>
+                  If the user cancels within 48 hours of the scheduled service,
+                  the user does not qualify for a refund.
+                  <ul class="list-[square] pl-8 space-y-1">
+                    <li>80% to the service provider.</li>
+                    <li>20% to EasyBoat.</li>
+                  </ul>
+                </li>
+                <li>
+                  Disputes over completed services must be reported within 24
+                  hours of completion.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Third-Party Links and Services
+              </h3>
+              <p class="text-gray-300">
+                The Platform may contain links to third-party websites and
+                services. EasyBoat does not control these external sites and is
+                not responsible for their content or privacy practices.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Prohibited Uses
+              </h3>
+
+              <p class="text-gray-300 mt-4">You agree not to:</p>
+
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>Use the Platform for any illegal purpose.</li>
+                <li>Violate any applicable laws or regulations.</li>
+                <li>Interfere with or disrupt the platform.</li>
+                <li>
+                  Impersonate another person or misrepresent your identity.
+                </li>
+                <li>Attempt to access unauthorized areas of the platform.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Intellectual Property
+              </h3>
+              <p class="text-gray-300">
+                All content on the Platform, including logos, text, graphics,
+                and software, is owned by EasyBoat or its licensors and is
+                protected by copyright and trademark laws. You may not modify,
+                distribute, reproduce, or sell any content without explicit
+                written permission.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Indemnification
+              </h3>
+              <p class="text-gray-300">
+                You agree to indemnify and hold harmless EasyBoat, its
+                affiliates, officers, employees, and partners from any claims,
+                losses, damages, or expenses arising from your use of the
+                Platform, violation of these Terms, or infringement of any
+                rights.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Arbitration and Dispute Resolution
+              </h3>
+              <p class="text-gray-300">
+                Any disputes arising from these Terms shall be resolved through
+                binding arbitration under the rules of the American Arbitration
+                Association. Both parties waive the right to a jury trial or
+                class-action lawsuit.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Limitation of Liability
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat is provided "as is" without warranties of any kind.
+                EasyBoat is not liable for any indirect, incidental, or
+                consequential damages related to the use of the Platform.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Modifications to Terms
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat reserves the right to modify these Terms at any time.
+                Updated terms will be posted on the Platform, and continued use
+                of the Platform signifies acceptance of the revised Terms.
+              </p>
+              <p class="text-gray-300">
+                By using EasyBoat, you acknowledge that you have read,
+                understood, and agreed to these Terms and Conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#0e222c] text-white py-12 px-8 md:px-16">
+      <div>
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
+            <h3 class="font-bold text-lg mb-4">Service Categories</h3>
+            <ul class="space-y-2 text-gray">
+            <li>
+                <a href="index.html#repair-maintenance" class="hover:text-blue-500"
+                  >Repair & Maintenance</a
+                >
+              </li>
+              <li>
+                <a href="index.html#cleaning-detailing" class="hover:text-blue-500"
+                  >Boat Cleaning & Detailing</a
+                >
+              </li>
+              <li>
+                <a href="index.html#marine-dock" class="hover:text-blue-500"
+                  >Marine & Dock Services</a
+                >
+              </li>
+              <li>
+                <a href="index.html#transport-hauling" class="hover:text-blue-500"
+                  >Transport & Hauling</a
+                >
+              </li>
+              <li>
+                <a href="index.html#additional-services" class="hover:text-blue-500"
+                  >Additional Services</a
+                >
+              </li>
+              <li>
+                <a href="index.html#diagnosis" class="hover:text-blue-500">Diagnosis</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
+            <h3 class="font-bold text-lg mb-4">Company</h3>
+            <ul class="space-y-2 text-gray">
+              <li>
+                <a href="#easyboat-app" class="hover:text-blue-500"
+                  >EasyBoat App</a
+                >
+              </li>
+              <li>
+                <a href="#yacht-management" class="hover:text-blue-500"
+                  >Yacht Management</a
+                >
+              </li>
+              <li>
+                <a href="#faq" class="hover:text-blue-500"
+                  >FAQ - Frequently Asked Questions</a
+                >
+              </li>
+              <li>
+                <a href="terms-conditions.html" class="hover:text-blue-500"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="privacy.html" class="hover:text-blue-500"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
+            <h3 class="font-bold text-lg mb-4">Contact Us</h3>
+            <ul class="space-y-2 text-gray">
+              <li>
+                <a href="tel:+19172392532" class="hover:text-blue-500"
+                  >+1 (917) 239-2532</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:maxanker@easyboat.app"
+                  class="hover:text-blue-500"
+                  >maxanker@easyboat.app</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/maps/search/40+West+Way,+Old+Greenwich,+CT,+06870"
+                  target="_blank"
+                  class="hover:text-blue-500"
+                >
+                  40 West Way, Old Greenwich, CT, 06870
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/easyboat.app"
+                  target="_blank"
+                  class="hover:text-blue-500"
+                >
+                  Instagram - easyboat.app
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mb-8">
+            <h3 class="font-bold text-lg mb-4">Subscribe</h3>
+            <form class="flex mb-4">
+              <input
+                type="email"
+                class="w-full flex-grow bg-white text-gray-800 border border-gray-500 placeholder-gray-400 py-2 px-4 rounded-l focus:outline-none"
+              />
+              <button
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white px-4 rounded-r"
+              >
+                >
+              </button>
+            </form>
+            <p class="text-sm">Sign up to be the first on the platform!</p>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-600 my-8"></div>
+
+        <div class="flex flex-wrap justify-between items-center gap-4">
+          <div>
+            <img src="assets/images/logo.png" alt="Logo" class="h-8" />
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-blue-500">
+              <img
+                src="assets/images/linkedin.png"
+                alt="LinkedIn"
+                class="w-6 h-6"
+              />
+            </a>
+            <a href="#" class="hover:text-blue-500">
+              <img
+                src="assets/images/facebook.png"
+                alt="Facebook"
+                class="w-6 h-6"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/easyboat.app"
+              target="_blank"
+              class="hover:text-blue-500"
+            >
+              <img
+                src="assets/images/insta.png"
+                alt="Instagram"
+                class="w-6 h-6"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Boat.</title>
+
+    <!-- Standard Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+
+    <!-- Apple Touch Icon (For iOS Home Screen) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+
+    <!-- Android Chrome Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicons/android-chrome-512x512.png"
+    />
+
+    <!-- Favicon for Legacy Browsers -->
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body class="bg-[#0e222e]">
+    <!-- Navbar -->
+    <header>
+      <nav
+        id="navbar"
+        class="navbar-transition fixed top-0 left-0 w-full z-50 py-4 px-6 sm:px-16"
+      >
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold text-white">
+            <a href="index.html">
+              <img src="assets/images/logo.png" alt="Logo" class="h-6" />
+            </a>
+          </div>
+          <div class="space-x-6 hidden md:flex items-center">
+            <a href="index.html" class="text-white hover:text-blue-500">Home</a>
+            <a href="index.html#about" class="text-white hover:text-blue-500"
+              >About Us</a
+            >
+            <a href="#contact" class="text-white hover:text-blue-500"
+              >Contact Us</a
+            >
+            <a
+              href="#get-started"
+              class="inline-block px-6 py-2 text-[#fb977d] border-2 border-[#fb977d] rounded-full hover:bg-[#fb977d] hover:text-black transition"
+            >
+              Get Started
+            </a>
+          </div>
+          <!-- Mobile Menu Icon -->
+          <div class="md:hidden">
+            <button id="mobile-menu-toggle" class="text-white text-3xl">
+              &#9776;
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+          <div class="flex flex-col space-y-4 py-4">
+            <a href="index.html" class="text-white hover:text-blue-500">Home</a>
+            <a href="index.html#about" class="text-white hover:text-blue-500">About Us</a>
+            <a href="#contact" class="text-white hover:text-blue-500"
+              >Contact Us</a
+            >
+            <a
+              href="#get-started"
+              class="inline-block text-center px-6 py-2 text-[#fb977d] border-2 border-[#fb977d] rounded-full hover:bg-[#fb977d] hover:text-black transition"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner relative w-full h-screen">
+        <div
+          class="absolute inset-0 flex items-center text-left text-white z-10 px-8 sm:px-16"
+        >
+          <div class="max-w-lg flex flex-col gap-4">
+            <div class="flex items-center space-x-4 mb-4">
+              <div class="w-16 h-0.5 bg-blue-500"></div>
+              <h2 class="text-blue-500 text-xl font-semibold uppercase">
+                Your Data, Your Privacy
+              </h2>
+            </div>
+            <h2 class="text-5xl sm:text-6xl mb-4 didot font-bold">
+              Our Commitment to Transparency
+            </h2>
+            <p class="text-lg mb-6 text-gray">
+              We prioritize your security and privacy. Learn how we handle your
+              data responsibly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="privacy-policy"
+        class="bg-[#0e222e] text-white py-16 px-8 sm:px-16"
+      >
+        <div class="    ">
+          <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-center">
+            Privacy Policy
+          </h2>
+
+          <div class="space-y-8">
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Protecting Your Privacy
+              </h3>
+              <p class="text-gray-300">
+                Protecting your private information is our priority. This
+                Privacy Policy applies to
+                <a
+                  href="https://www.easyboat.app"
+                  target="_blank"
+                  class="text-blue-400 underline"
+                  >www.easyboat.app</a
+                >
+                and EasyBoat mobile applications (collectively, “EasyBoat”) and
+                governs data collection and usage. By using EasyBoat, you
+                consent to the data practices described in this statement.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Collection of Your Personal Information
+              </h3>
+              <p class="text-gray-300">
+                To provide you with our services, EasyBoat may collect the
+                following personally identifiable information:
+              </p>
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>First and Last Name</li>
+                <li>Mailing Address</li>
+                <li>Email Address</li>
+                <li>Phone Number</li>
+              </ul>
+              <p class="text-gray-300 mt-4">
+                If you purchase EasyBoat’s services, we collect billing and
+                credit card information. This information is used to complete
+                your transactions.
+              </p>
+
+              <p class="text-gray-300 mt-4">
+                We do not collect personal information unless you voluntarily
+                provide it. However, you may need to provide certain personal
+                details when using our services, such as:
+              </p>
+
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>Registering an account</li>
+                <li>Participating in promotions, surveys, or contests</li>
+                <li>Signing up for special offers</li>
+                <li>Sending us inquiries or service requests</li>
+                <li>Submitting payment details for transactions</li>
+              </ul>
+
+              <p class="text-gray-300 mt-4">
+                EasyBoat may also gather additional personal or non-personal
+                information in the future.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Use of Your Personal Information
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat collects and uses your personal information to:
+              </p>
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>Operate the website and mobile application</li>
+                <li>Provide the services you request</li>
+                <li>Improve user experience and customer support</li>
+                <li>
+                  Notify you about new products or services from EasyBoat and
+                  affiliates
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Sharing Information With Third Parties
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat does not sell, rent, or lease customer information.
+                However, we may share data with trusted partners for:
+              </p>
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>Performing statistical analysis</li>
+                <li>Sending emails or postal mail</li>
+                <li>Providing customer support</li>
+                <li>Facilitate service provider transactions</li>
+              </ul>
+              <p class="text-gray-300 mt-4">
+                All third-party partners are prohibited from using your personal
+                information for any purpose other than providing services to
+                EasyBoat and are required to maintain confidentiality.
+              </p>
+
+              <p class="text-gray-300 mt-4">
+                EasyBoat may disclose your personal information if required by
+                law or to:
+              </p>
+
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>Comply with legal processes</li>
+                <li>Protect EasyBoat’s rights and property</li>
+                <li>Safeguard user and public safety</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Tracking User Behavior
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat may track user behavior on the website and app to
+                determine popular services and improve user experience. This
+                data helps us tailor content and marketing efforts.
+              </p>
+
+              <p class="text-lg font-semibold text-gray-200 mt-4">
+                Automatically Collected Information
+              </p>
+
+              <p class="text-gray-300 mt-4">
+                We may collect information about your device, including:
+              </p>
+
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>IP address</li>
+                <li>Browser type</li>
+                <li>Access times</li>
+                <li>Referring website addresses</li>
+              </ul>
+
+              <p class="text-gray-300 mt-4">
+                This information helps maintain service quality and optimize EasyBoat’s functionality.
+
+              </p>
+
+              <p class="text-lg font-semibold text-gray-200 mt-4">
+                Security of Your Personal Information
+              </p>
+
+              <p class="text-gray-300 mt-4">
+                EasyBoat secures your personal information from unauthorized
+                access, use, or disclosure using:
+              </p>
+
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>SSL Encryption: Protecting payment and personal data</li>
+                <li>Access Controls: Restricting sensitive data access</li>
+              </ul>
+
+              <p class="text-gray-300 mt-4">
+                While we take appropriate security measures, no internet
+                transmission is 100% secure. By using EasyBoat, you acknowledge
+                inherent security risks.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Children Under Thirteen
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat does not knowingly collect data from children under 13.
+                If you are under 13, parental consent is required to use our
+                services.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Connecting EasyBoat to Third-Party Accounts
+              </h3>
+              <p class="text-gray-300">
+                You may link your EasyBoat account to third-party services
+                (e.g., Google, Facebook). By doing so, you consent to the
+                release of certain information according to your privacy
+                settings on those platforms. You can disconnect your account at
+                any time.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Email Communications
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat may contact you via email for service updates,
+                promotions, and announcements. To opt out of marketing emails,
+                click the UNSUBSCRIBE link in the email.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                External Data Storage
+              </h3>
+              <p class="text-gray-300">
+                Your data may be stored on servers provided by third-party
+                hosting vendors.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-[#fb977d] mb-4">
+                Changes to This Policy
+              </h3>
+              <p class="text-gray-300">
+                EasyBoat reserves the right to modify this Privacy Policy. We
+                will notify users via:
+              </p>
+              <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2">
+                <li>Email (to the address associated with your account)</li>
+                <li>A notice on our website</li>
+              </ul>
+              <p class="text-gray-300 mt-4">
+                Your continued use of EasyBoat after modifications indicates
+                acceptance of the updated Privacy Policy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#0e222c] text-white py-12 px-8 md:px-16">
+      <div>
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
+            <h3 class="font-bold text-lg mb-4">Service Categories</h3>
+            <ul class="space-y-2 text-gray">
+              <li>
+                <a href="index.html#repair-maintenance" class="hover:text-blue-500"
+                  >Repair & Maintenance</a
+                >
+              </li>
+              <li>
+                <a href="index.html#cleaning-detailing" class="hover:text-blue-500"
+                  >Boat Cleaning & Detailing</a
+                >
+              </li>
+              <li>
+                <a href="index.html#marine-dock" class="hover:text-blue-500"
+                  >Marine & Dock Services</a
+                >
+              </li>
+              <li>
+                <a href="index.html#transport-hauling" class="hover:text-blue-500"
+                  >Transport & Hauling</a
+                >
+              </li>
+              <li>
+                <a href="index.html#additional-services" class="hover:text-blue-500"
+                  >Additional Services</a
+                >
+              </li>
+              <li>
+                <a href="index.html#diagnosis" class="hover:text-blue-500">Diagnosis</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
+            <h3 class="font-bold text-lg mb-4">Company</h3>
+            <ul class="space-y-2 text-gray">
+              <li>
+                <a href="#easyboat-app" class="hover:text-blue-500"
+                  >EasyBoat App</a
+                >
+              </li>
+              <li>
+                <a href="#yacht-management" class="hover:text-blue-500"
+                  >Yacht Management</a
+                >
+              </li>
+              <li>
+                <a href="#faq" class="hover:text-blue-500"
+                  >FAQ - Frequently Asked Questions</a
+                >
+              </li>
+              <li>
+                <a href="terms-conditions.html" class="hover:text-blue-500"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="privacy.html" class="hover:text-blue-500"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:w-1/2 md:w-1/4 mb-8">
+            <h3 class="font-bold text-lg mb-4">Contact Us</h3>
+            <ul class="space-y-2 text-gray">
+              <li>
+                <a href="tel:+19172392532" class="hover:text-blue-500"
+                  >+1 (917) 239-2532</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:maxanker@easyboat.app"
+                  class="hover:text-blue-500"
+                  >maxanker@easyboat.app</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/maps/search/40+West+Way,+Old+Greenwich,+CT,+06870"
+                  target="_blank"
+                  class="hover:text-blue-500"
+                >
+                  40 West Way, Old Greenwich, CT, 06870
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/easyboat.app"
+                  target="_blank"
+                  class="hover:text-blue-500"
+                >
+                  Instagram - easyboat.app
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mb-8">
+            <h3 class="font-bold text-lg mb-4">Subscribe</h3>
+            <form class="flex mb-4">
+              <input
+                type="email"
+                class="w-full flex-grow bg-white text-gray-800 border border-gray-500 placeholder-gray-400 py-2 px-4 rounded-l focus:outline-none"
+              />
+              <button
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white px-4 rounded-r"
+              >
+                >
+              </button>
+            </form>
+            <p class="text-sm">Sign up to be the first on the platform!</p>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-600 my-8"></div>
+
+        <div class="flex flex-wrap justify-between items-center gap-4">
+          <div>
+            <img src="assets/images/logo.png" alt="Logo" class="h-8" />
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-blue-500">
+              <img
+                src="assets/images/linkedin.png"
+                alt="LinkedIn"
+                class="w-6 h-6"
+              />
+            </a>
+            <a href="#" class="hover:text-blue-500">
+              <img
+                src="assets/images/facebook.png"
+                alt="Facebook"
+                class="w-6 h-6"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/easyboat.app"
+              target="_blank"
+              class="hover:text-blue-500"
+            >
+              <img
+                src="assets/images/insta.png"
+                alt="Instagram"
+                class="w-6 h-6"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
